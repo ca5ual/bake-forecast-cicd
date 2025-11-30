@@ -6,6 +6,7 @@ import logging
 
 logger = logging.getLogger("bake_forecast")
 
+
 def get_average_bakes(file_path: Path) -> float:
     count: int = 0
     data_dict: dict[Any, Any] = {}
@@ -22,12 +23,12 @@ def get_average_bakes(file_path: Path) -> float:
                 continue
             try:
                 data_dict[i] = {"day": row[0], "quantity_sold": int(row[1])}
-                count+=1
+                count += 1
             except ValueError:
                 continue
-    
+
     logger.info(f"Proccesed {count} rows.")
-    
+
     today_day = datetime.today().strftime("%A")  # ex. Monday / Tuesday... /
 
     # Select only those that match today’s date
