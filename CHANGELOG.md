@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.2.0 (2025-11-30)
+
+### Features
+
+- New release
+  ([`66110d4`](https://github.com/ca5ual/bake-forecast-cicd/commit/66110d4d30de6b1de50d37da8e069bcb06f17c60))
+
+
 ## v1.1.0 (2025-11-30)
 
 ### Features
