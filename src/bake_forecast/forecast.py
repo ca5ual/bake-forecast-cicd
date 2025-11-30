@@ -8,6 +8,15 @@ logger = logging.getLogger("bake_forecast")
 
 
 def get_average_bakes(file_path: Path) -> float:
+    """
+    Calculate the average number of bakes for one file based on the current day.
+
+    Args:
+        file_path: A single CSV file (Path).
+
+    Returns:
+        Average number of cookies sold today as a float.
+    """
     count: int = 0
     data_dict: dict[Any, Any] = {}
 
