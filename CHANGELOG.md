@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.0 (2025-11-30)
+
+### Features
+
+- Publishing to PyPI
+  ([`b23a6d2`](https://github.com/ca5ual/bake-forecast-cicd/commit/b23a6d24582aebd7cbac6d98b90dbce0e840b3a2))
+
+
 ## v1.0.1 (2025-11-30)
 
 ### Bug Fixes
