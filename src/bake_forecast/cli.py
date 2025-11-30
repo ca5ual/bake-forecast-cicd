@@ -43,6 +43,5 @@ def main(file: str, verbose: bool):
 
     click.echo("\n --RESULT--")
     logger.debug("Process finished with success.")
-    click.echo(
-        f"Recommended number of cookies to bake today is: {result:.1f}. Based on: {file_path}"
-    )
+    logger.info (f"Recommended number of cookies to bake today is: {result:.1f}")
+   
