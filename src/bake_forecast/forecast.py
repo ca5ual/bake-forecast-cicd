@@ -4,11 +4,8 @@ from datetime import datetime
 from pathlib import Path
 
 
-data_dict: dict[Any, Any] = {}
-
-
-def get_average_bakes(file: str | Path) -> float | list[float]:
-
+def get_average_bakes(file: str | Path) -> float:
+    data_dict: dict[Any, Any] = {}
     file_path = Path(file)
 
     if not file_path.is_file():
@@ -37,6 +34,6 @@ def get_average_bakes(file: str | Path) -> float | list[float]:
         average_today = sum(quantities_today) / len(quantities_today)
     else:
         print(f"Some error occured or no historical data for {today_day}")
-        return False
+        return 0.0
 
     return average_today

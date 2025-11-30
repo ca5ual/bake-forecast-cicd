@@ -14,9 +14,7 @@ dev = [
   "pytest-mock",
   "ruff",
   "black",
-  "mypy",
-  "bandit",
-  "types-requests"
+  "mypy"
 ]
 
 [project.scripts]
