@@ -29,6 +29,7 @@ Install the package from PyPI and try it with prepared .csv file in this repo:
 ```bash
 pip install bake-forecast-cicd
 get_average_bakes sold_items_1.csv
+```
 
 ## Example Output (Verbose Mode)
 
