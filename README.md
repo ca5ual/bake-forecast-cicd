@@ -30,16 +30,6 @@ Install the package from PyPI and try it with prepared .csv file in this repo:
 pip install bake-forecast-cicd
 get_average_bakes sold_items_1.csv
 
-# Bake Forecast CLI
-
-This tool processes a CSV file with sold items and provides a recommended number of cookies to bake today.
-
-## Example Usage
-
-```bash
-get_average_bakes sold_items_1.csv -v
-```
-
 ## Example Output (Verbose Mode)
 
 ```
