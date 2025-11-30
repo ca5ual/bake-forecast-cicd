@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "A simple program that predicts the number of cookies necessary to bake."
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+  "click>=8.0,<9.0",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -15,3 +18,12 @@ dev = [
   "bandit",
   "types-requests"
 ]
+
+[project.scripts]
+get_average_bakes = "bake_forecast.cli:main"
+
+[tool.ruff]
+line-length = 88
+
+[tool.black]
+line-length = 88
